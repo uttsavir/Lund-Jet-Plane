@@ -1,0 +1,2 @@
+rootcling -f delZAna_dictionary.cxx -rml libdelZAna.so -rmf libdelZAna.rootmap -I/home/tashvi/Uttsavir/Work/MCGenerators/Delphes-3.5.0 -I/home/tashvi/Uttsavir/Work/MCGenerators/Delphes-3.5.0/external delZAna.h LinkDef.h
+g++ delZAna_dictionary.cxx ana.cpp delZAna.C `root-config --cflags --libs` -I/home/tashvi/Uttsavir/Work/MCGenerators/Delphes-3.5.0 -I/home/tashvi/Uttsavir/Work/MCGenerators/Delphes-3.5.0/external -L/home/tashvi/Uttsavir/Work/MCGenerators/Delphes-3.5.0 -lDelphes -o ana
