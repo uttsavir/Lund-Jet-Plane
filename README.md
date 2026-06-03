@@ -10,20 +10,9 @@ mkdir MCGenerators
 cd MCGenerators
 ```
 
-### 2. Madgraph
-MadGraph can be downloaded directly from the official website.
-Note: I have used version 3.5.5.
-
-```bash
-# Download Pythia 8.312
-$ wget [https://www.pythia.org/download/pythia83/pythia8312.tgz].(https://www.pythia.org/download/pythia83/pythia8312.tgz)
-
-# Unzip the tarball
-$ tar xvfz pythia8312.tgz
-```
-### 3. Pythia
-Pythia can be downloaded and compiled from the official website.
-Note: I have used version 8.312
+### 2. Pythia
+Pythia can be downloaded and compiled from the official website. It is used for hadronization. The LHE file from MadGraph can be input.
+> *Note: I have used version 8.312*
 
 ```bash
 # Return to the MCGenerators directory
@@ -39,7 +28,7 @@ $ tar xvfz pythia8312.tgz
 $ cd pythia8312
 $ make
 ```
-### 4. Delphies
+### 3. Delphes
 ```bash
 # Return to the MCGenerators directory
 $ cd ..
@@ -54,11 +43,12 @@ $ tar -zxf Delphes-3.5.0.tar.gz
 $ cd Delphes-3.5.0
 make
 ```
-### 5. Integrating Pythia 8 with Delphes
+### 4. Integrating Pythia 8 with Delphes
 
 Important: Do not use Pythia standalone, as it can be quite unstable for this workflow. Instead, we will use it inside Delphes by creating an executable called DelphesPythia8.
 
-** Make the Pythia library available globally:**
+**Make the Pythia library available globally:**
+<br>
 Edit your .bashrc file and add the following line:
 
 ``` bash
