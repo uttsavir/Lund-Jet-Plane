@@ -11,7 +11,7 @@ cd MCGenerators
 ```
 
 ### 2. Pythia
-Pythia can be downloaded and compiled from the official website. It is used for hadronization. The LHE file from MadGraph can be input.
+Pythia can be downloaded and compiled from the official website. It is used for hadronization. The LHE file from MadGraph will be used as the input (A sample LHE file is given in the repository for testing the installation).
 > *Note: I have used version 8.312*
 
 ```bash
@@ -19,7 +19,7 @@ Pythia can be downloaded and compiled from the official website. It is used for 
 $ cd ..
 
 # Download Pythia 8.312
-$ wget [https://www.pythia.org/download/pythia83/pythia8312.tgz].(https://www.pythia.org/download/pythia83/pythia8312.tgz)
+$ wget https://www.pythia.org/download/pythia83/pythia8312.tgz
 
 # Unzip the tarball
 $ tar xvfz pythia8312.tgz
@@ -34,7 +34,7 @@ $ make
 $ cd ..
 
 # Download Delphes 3.5.0
-$ wget [http://cp3.irmp.ucl.ac.be/downloads/Delphes-3.5.0.tar.gz](http://cp3.irmp.ucl.ac.be/downloads/Delphes-3.5.0.tar.gz)
+$ wget http://cp3.irmp.ucl.ac.be/downloads/Delphes-3.5.0.tar.gz
 
 # Unzip the tarball
 $ tar -zxf Delphes-3.5.0.tar.gz
